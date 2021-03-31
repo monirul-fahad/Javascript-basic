@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p id="demo">Java Script can change HTML content.</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML= 'Hello JavaScript'"> click
+            here</button>
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='40px'">show in big size</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="document.getElementById('myImage').src='./images/pic_bulbon.gif'"> Turn on the
+            light</button>
+
+        <img id="myImage" src="./images/pic_bulboff.gif" alt="Bulb off" style="width: 100px;">
+
+        <button type="button" onclick="document.getElementById('myImage').src='./images/pic_bulboff.gif'"> Turn off the
+            light</button>
+    </div>
+
+    <div>
+        <h1>Hide Element</h1>
+        <p id="demo2">JavaScript can hide HTML Elements</p>
+        <button type="button" onclick="document.getElementById('demo2').style.display='none'"> click me </button>
+        <h1>Show Element</h1>
+        <button type="button" onclick="document.getElementById('demo2').style.display='block'"> click me</button>
+    </div>
+
+    <div>
+        <p id=demo3> </p>
+        <script> document.getElementById('demo3').innerHTML = 'My First Javascript.';</script>
+    </div>
+
+
+    <!-- Value -->
+    <div>
+        <h2>Lets practice value.</h2>
+        <p id="demo4"></p>
+        <script>
+            var x, y, z;  // statement 1
+            x = 50;        // statement 2
+            y = 10;         // statement 3
+            z = x + y;     // statement 4
+
+            document.getElementById('demo4').innerHTML = 'The value of z is ' + z + '.';
+        </script>
+    </div>
+    <div>
+        <p>Price of product</p>
+        <p id="demo5"></p>
+        <script>
+            var price1 = 450;
+            var price2 = 150;
+            var total = price1 + price2;
+            document.getElementById('demo5').innerHTML = 'The total price is: ' + total;
+        </script>
+    </div>
+
+    <div>
+        <p id="demo6"></p>
+        <script>
+            // Create an object:
+            const car = { type: "Fiat", model: "500", color: "white" };
+
+            // Change a property:
+            car.color = "red";
+
+            // Add a property:
+            car.owner = "Johnson";
+
+            // Display the property:
+            document.getElementById("demo6").innerHTML = "Car owner is " + car.owner;
+        </script>
+    </div>
+
+    <div>
+        <h2>The + Operator</h2>
+        <p id="demo7"></p>
+        <script>
+            var x = 5;
+            var y = 2;
+            var z = x + y;
+            document.getElementById("demo7").innerHTML = z;
+        </script>
+    </div>
+
+    <div>
+        <h2>The - Operator</h2>
+        <p id="demo8"></p>
+        <script>
+            var x = 5;
+            var y = 2;
+            var z = x - y;
+            document.getElementById("demo8").innerHTML = z;
+        </script>
+    </div>
+
+    <div>
+        <h2>The * Operator</h2>
+
+        <p id="demo9"></p>
+
+        <script>
+            var x = 5;
+            var y = 2;
+            var z = x * y;
+            document.getElementById("demo9").innerHTML = z;
+        </script>
+    </div>
+
+    <div>
+        <h2>The / Operator</h2>
+        <p id="demo10"></p>
+
+        <script>
+            var x = 5;
+            var y = 2;
+            var z = x / y;
+            document.getElementById("demo10").innerHTML = z;
+        </script>
+    </div>
+
+    <div>
+        <p>A typical arithmetic operation takes two numbers produces a new number.</p>
+
+        <p id="demo11"></p>
+
+        <script>
+            var a = 3;
+            var x = (100 + 50) * a;
+            document.getElementById("demo11").innerHTML = x;
+        </script>
+    </div>
+
+    <div>
+        <h2>The % Operator</h2>
+        <p id="demo12"></p>
+        <script>
+            var x = 5;
+            var y = 2;
+            var z = x % y;
+            document.getElementById("demo12").innerHTML = z;
+        </script>
+    </div>
+
+    <div>
+        <h2>The ++ Operator</h2>
+        <p id="demo13"></p>
+        <script>
+            var x = 5;
+            x++;
+            var z = x;
+            document.getElementById("demo13").innerHTML = z;
+        </script>
+    </div>
+
+    <div>
+        <h2>The -- Operator</h2>
+        <p id="demo14"></p>
+
+        <script>
+            var x = 5;
+            x--;
+            var z = x;
+            document.getElementById("demo14").innerHTML = z;
+        </script>
+    </div>
+    <div>
+        <p> true or false:</p>
+
+        <p id="demo15"></p>
+
+        <script>
+            var x = 5;
+            var y = 5;
+            var z = 6;
+            document.getElementById("demo15").innerHTML = "x = y" + ". " +
+                (x == y) + "<br>" + "x = z" + ". " + (x == z);
+        </script>
+    </div>
+    <div>
+        <h2>JavaScript Objects</h2>
+
+        <p id="demo16"></p>
+
+        <script>
+            var person = {
+                firstName: "John",
+                lastName: "Doe",
+                age: 50,
+            };
+
+            document.getElementById("demo16").innerHTML =
+                person.firstName + person.lastName + " is " + person.age + " years old.";
+        </script>
+    </div>
+    <div>
+        <h2>JavaScript Functions</h2>
+
+        <p>This example calls a function which performs a calculation, and returns the result:</p>
+
+        <p id="demo17"></p>
+
+        <script>
+            function myFunction(p1, p2) {
+                return p1 * p2;
+            }
+            document.getElementById("demo17").innerHTML = myFunction(4, 3);
+        </script>
+        <div>
+            <button onclick="document.getElementById('demo18').innerHTML=Date()">The time is?</button>
+            <p id="demo18"></p>
+
+        </div>
+        <div>
+            <button onclick="this.innerHTML=Date()">The time is?</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

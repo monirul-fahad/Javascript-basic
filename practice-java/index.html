@@ -215,16 +215,110 @@
             }
             document.getElementById("demo17").innerHTML = myFunction(4, 3);
         </script>
-        <div>
-            <button onclick="document.getElementById('demo18').innerHTML=Date()">The time is?</button>
-            <p id="demo18"></p>
-
-        </div>
-        <div>
-            <button onclick="this.innerHTML=Date()">The time is?</button>
-        </div>
+    </div>
+    <div>
+        <button onclick="document.getElementById('demo18').innerHTML=Date()">The time is?</button>
+        <p id="demo18"></p>
 
     </div>
+    <div>
+        <button onclick="this.innerHTML=Date()">The time is?</button>
+    </div>
+
+    <div>
+        <h2>JavaScript Numbers</h2>
+
+        <p>Numbers can be written with or without decimals:</p>
+
+        <p id="demo19"></p>
+
+        <script>
+            var x = 3.14;
+            var y = 3;
+            document.getElementById("demo19").innerHTML = x + "<br>" + y;
+        </script>
+
+    </div>
+    <div>
+        <h2>JavaScript Numbers</h2>
+
+        <p>If you add a numeric string and a number, the result will be a concatenated string:</p>
+
+        <p id="demo20"></p>
+
+        <script>
+            var x = "10";
+            var y = 20;
+            document.getElementById("demo20").innerHTML =
+                "The result is: " + x + y;
+        </script>
+
+
+        <p>The toString() method converts a number to a string.</p>
+
+        <p id="demo21"></p>
+
+        <script>
+            var x = 123;
+            document.getElementById("demo21").innerHTML =
+                x.toString() + "<br>" +
+                (123).toString() + "<br>" +
+                (100 + 23).toString();
+        </script>
+    </div>
+
+    <div>
+        <h2>JavaScript Arrays</h2>
+
+        <p id="demo22"></p>
+
+        <script>
+            var cars = ["Saab", "Volvo", "BMW"];
+            document.getElementById("demo22").innerHTML = cars;
+        </script>
+
+        <h2>Arrays with one Element.</h2>
+
+        <p id="demo23"></p>
+
+        <script>
+            var cars = ["Saab", "Volvo", "BMW"];
+            document.getElementById("demo23").innerHTML = cars[0];
+        </script>
+    </div>
+    <div>
+        <h2>join()</h2>
+
+        <h2>The join() method joins array elements into a string.</h2>
+
+        <p id="demo24"></p>
+
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo24").innerHTML = fruits.join(" * ");
+        </script>
+    </div>
+    <div>
+        <h2>JavaScript Array Sort</h2>
+
+        <h2>The sort() method sorts an array alphabetically.</h2>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo25"></p>
+
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo25").innerHTML = fruits;
+
+            function myFunction() {
+                fruits.sort();
+                document.getElementById("demo25").innerHTML = fruits;
+            }
+        </script>
+
+    </div>
+
 </body>
 
 </html>

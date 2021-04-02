@@ -316,7 +316,91 @@
                 document.getElementById("demo25").innerHTML = fruits;
             }
         </script>
+    </div>
 
+    <!-- string method -->
+
+    <div>
+        <h2>find the word on a string </h2>
+        <p id="demo26"></p>
+
+        <script>
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.indexOf("locate");
+            document.getElementById("demo26").innerHTML = pos;
+        </script>
+    </div>
+    <div>
+
+        <h2>position of last word if the string has same word many times</h2>
+        <p id="demo27"></p>
+
+        <script>
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.lastIndexOf("locate");
+            document.getElementById("demo27").innerHTML = pos;
+        </script>
+    </div>
+    <div>
+
+        <h2>JavaScript new Date()</h2>
+
+        <p id="demo28"></p>
+
+        <script>
+            var d = new Date();
+            document.getElementById("demo28").innerHTML = d;
+        </script>
+    </div>
+    <div>
+        <h2>JavaScript Math.round()</h2>
+        <p id="demo29"></p>
+
+        <script>
+            document.getElementById("demo29").innerHTML = Math.round(4.4);
+        </script>
+
+        <h2>JavaScript Math.ceil()</h2>
+
+        <p id="demo30"></p>
+
+        <script>
+            document.getElementById("demo30").innerHTML = Math.ceil(4.4);
+        </script>
+
+        <h2>JavaScript Math.floor()</h2>
+
+        <p id="demo31"></p>
+
+        <script>
+            document.getElementById("demo31").innerHTML = Math.floor(4.7);
+        </script>
+
+        <h2>JavaScript Math.trunc()</h2>
+
+        <p id="demo32"></p>
+
+        <script>
+            document.getElementById("demo32").innerHTML = Math.trunc(4.7);
+        </script>
+    </div>
+
+
+    <!-- boolens -->
+    <div>
+
+        <h2>boolens</h2>
+        <p>Display the value of 10 > 9:</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo33"></p>
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo34").innerHTML = 10 > 9;
+            }
+        </script>
     </div>
 
 </body>

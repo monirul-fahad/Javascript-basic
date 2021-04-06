@@ -10,19 +10,19 @@
 
 // // traverse array 
 
-// var arr = [4, 5, 1, 6, 8, 9, 40, 50]
+var arr = [4, 5, 1, 6, 8, 9, 40, 50]
 
-// arr[0]
-// arr[2]
+arr[0]
+arr[2]
 
-// arr[arr.length - 1]
+arr[arr.length - 1]
 
-// for (var i = 0; i < arr.length; i++) {
-//     console.log(arr[i])
-//     arr[i] = arr[i] + 2
-// }
+for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+    arr[i] = arr[i] + 2
+}
 
-// console.log(arr)
+console.log(arr)
 
 // var sum = 0
 // for (var i = 0; i < arr.length; i++) {
@@ -69,22 +69,22 @@
 
 // // Search Data
 
-// var arr = [4, 7, 2, 6, 8, 4, 55, 9, 89, 27]
+var arr = [4, 7, 2, 6, 8, 4, 55, 9, 89, 27]
 
-// var find = 555
-// var isFound = false
+var find = 555
+var isFound = false
 
-// for (var i = 0; i < arr.length; i++) {
-//     if (arr[i] === find) {
-//         console.log('Data Found at Index ' + i)
-//         isFound = true
-//         break;
-//     } 
-// }
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === find) {
+        console.log('Data Found at Index ' + i)
+        isFound = true
+        break;
+    } 
+}
 
-// if (!isFound) {
-//     console.log('Data Not Found')
-// }
+if (!isFound) {
+    console.log('Data Not Found')
+}
 
 
 // MultiDimensional Array
@@ -107,14 +107,14 @@
 
 // Reverse an Array
  
-var arr = [1, 2, 3, 4, 5, 6, 7, 8]
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8]
 
-for (var i = 0; i < (arr.length / 2); i++) {
-    var index = arr[i]
-    arr[i] = arr[arr.length - 1 - i]
-    arr[arr.length - 1 - i] = index
-}
-console.log(arr)
-// console.log(arr.reverse())
+// for (var i = 0; i < (arr.length / 2); i++) {
+//     var index = arr[i]
+//     arr[i] = arr[arr.length - 1 - i]
+//     arr[arr.length - 1 - i] = index
+// }
+// console.log(arr)
+// // console.log(arr.reverse())
 
 

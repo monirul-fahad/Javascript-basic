@@ -114,3 +114,15 @@ setTimeout(function () {
 
 var another = addition
 console.log(another(7, 8))
+
+
+// innerFunction
+function something(greet, name) {
+    function sayHi() {
+        console.log(greet,name)
+    }
+
+    sayHi()
+}
+
+something('Good Morning', 'Monirul Fahad')

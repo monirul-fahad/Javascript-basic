@@ -36,4 +36,3 @@ function test(n) {
     }
 }
 
-test(15)

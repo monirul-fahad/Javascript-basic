@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        var num1 = parseInt(prompt('Enter First Number :'));
+        var op = prompt('Enter Operator form +, -, *, /');
+        var num2 = parseInt(prompt('Enter Second Number :'));
+        
+
+        function sum (num1, num2){
+            var result = num1 + num2;
+            document.write(num1 + '+' + num2 + '=' + result + '<br/>')
+        }
+
+        function sub (num1, num2){
+            var result = num1 - num2;
+            document.write(num1 + '-' + num2 + '=' + result + '<br/>')
+        }
+
+        function multi (num1, num2){
+            var result = num1 * num2;
+            document.write(num1 + '*' + num2 + '=' + result + '<br/>')
+        }
+
+        function div (num1, num2){
+            var result = num1 / num2;
+            document.write(num1 + '/' + num2 + '=' + result + '<br/>')
+        }
+        
+        if (op == '+'){
+            sum(num1,num2)
+        } 
+        else if ( op == '-'){
+            sub(num1,num2)
+        } 
+        else if (op == '*'){
+            multi(num1,num2)
+        } 
+        else if ( op == '/'){
+            div(num1,num2)
+        }
+        else {
+            alert('Invalid Operator ! ! !')
+        }
+
+
+        // var result;
+
+        // result = (num1 + num2)
+        // document.write(num1 + '+' + num2 + '=' + result + '<br/>')
+
+        // result = (num1 - num2)
+        // document.write(num1 + '-' + num2 + '=' + result + '<br/>')
+
+        
+        // result = (num1 * num2)
+        // document.write(num1 + '*' + num2 + '=' + result + '<br/>')
+
+        
+        // result = (num1 / num2)
+        // document.write(num1 + '/' + num2 + '=' + result + '<br/>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

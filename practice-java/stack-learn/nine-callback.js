@@ -22,3 +22,8 @@ var result3 = sample(5, 8, function (c, d) {
     return c * d
 })
 console.log(result3)
+
+var result4 = sample(5, 8, function (c,d){
+    return c / d
+})
+console.log(result4)

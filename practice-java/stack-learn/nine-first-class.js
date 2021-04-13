@@ -45,12 +45,12 @@ function manipulate(a, b, func) {
 }
 var multiply = manipulate(3, 4, add)
 console.log(multiply())
-
-
 // 6. We can return Functions from Another Function
 
-// First Look at Closure
 
+
+
+// First Look at Closure
 var b = 10
 
 function a() {

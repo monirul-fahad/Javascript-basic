@@ -398,8 +398,72 @@
 
         <script>
             function myFunction() {
-                document.getElementById("demo34").innerHTML = 10 > 9;
+                document.getElementById("demo33").innerHTML = 10 > 9;
             }
+        </script>
+    </div>
+
+    <!-- for loop -->
+    <div>
+        <h2>For Loop</h2>
+
+        <p id="demo34"></p>
+
+        <script>
+            var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+            var body = "";
+            var i;
+            for (i = 0; i < cars.length; i++) {
+                body += cars[i] + "<br>";
+            }
+            document.getElementById("demo34").innerHTML = body;
+        </script>
+    </div>
+    <div>
+        <p>While Loop</p>
+        <p id="demo35"></p>
+
+        <script>
+            var text = "";
+            var i = 0;
+            while (i < 5) {
+                text += "<br>The number is " + i;
+                i++;
+            }
+            document.getElementById("demo35").innerHTML = text;
+        </script>
+    </div>
+    <div>
+        <p>Break the Loop
+            Break the loop when it is 3
+        </p>
+
+        <p id="demo36"></p>
+
+        <script>
+            var text = "";
+            var i;
+            for (i = 0; i < 10; i++) {
+                if (i === 3) { break; }
+                text += "The number is " + i + "<br>";
+            }
+            document.getElementById("demo36").innerHTML = text;
+        </script>
+    </div>
+    <div>
+        <p>continue the Loop
+            the loop will skip the 2 Loop 
+        </p>
+        <p id="demo37"></p>
+
+        <script>
+            var text = "";
+            var i;
+            for (i = 0; i < 5; i++) {
+                if (i === 2) { continue; }
+                text += "The number is " + i + "<br>";
+            }
+            document.getElementById("demo37").innerHTML = text;
         </script>
     </div>
 

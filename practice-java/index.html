@@ -452,7 +452,7 @@
     </div>
     <div>
         <p>continue the Loop
-            the loop will skip the 2 Loop 
+            the loop will skip the 2 Loop
         </p>
         <p id="demo37"></p>
 
@@ -465,6 +465,43 @@
             }
             document.getElementById("demo37").innerHTML = text;
         </script>
+    </div>
+    <div>
+        <h2>Type of Data</h2>
+        <p id="demo38"></p>
+
+        <script>
+            document.getElementById("demo38").innerHTML =
+                typeof "john" + "<br>" +
+                typeof 3.14 + "<br>" +
+                typeof false + "<br>" +
+                typeof [1, 2, 3, 4] + "<br>"
+        </script>
+    </div>
+
+    <div>
+        <h2>Regular Expressions</h2>
+
+        <p>Replace "My name" with "Fahad" in the paragraph below:</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo39">i am my name. you can call me my name.</p>
+
+        <script>
+            function myFunction() {
+                var str = document.getElementById("demo39").innerHTML;
+                var txt = str.replace(/my name/i, "Fahad");
+                document.getElementById("demo39").innerHTML = txt;
+            }
+        </script>
+    </div>
+    <h2>hoisting</h2>
+    <p>In JavaScript, a variable can be declared after it has been used. </br>
+
+        In other words; a variable can be used before it has been declared.</p>
+    <div>
+
     </div>
 
 </body>

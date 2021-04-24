@@ -116,7 +116,7 @@
 
 
 
-const arr = [10, 22, 35]
+// const arr = [10, 22, 35]
 
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i])
@@ -156,17 +156,17 @@ const arr = [10, 22, 35]
 // console.log(iterate.next())
 
 // for loop 
-function* generate(array) {
-    for (let i = 0; i < array.length; i++) {
-        yield array[i]
-    }
-}
+// function* generate(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         yield array[i]
+//     }
+// }
 
-let it = generate([20, 15, 78])
-console.log(it.next())
-console.log(it.next())
-console.log(it.next())
-console.log(it.next())
+// let it = generate([20, 15, 78])
+// console.log(it.next())
+// console.log(it.next())
+// console.log(it.next())
+// console.log(it.next())
 
     //  set 
 
@@ -207,10 +207,85 @@ console.log(it.next())
 
 // WEAK MAP 
 
-let weakMap = new WeakMap([[a, 45], [b, 75]])
+// let weakMap = new WeakMap([[a, 45], [b, 75]])
 
-a = null
+// a = null
 
-console.log(weakMap.get(a))
-console.log(weakMap.has(a))
-console.log(weakMap.has(b))
+// console.log(weakMap.get(a))
+// console.log(weakMap.has(a))
+// console.log(weakMap.has(b))
+
+
+
+// ES6 CLASS 
+
+// function Rectangle(width, height) {
+//     this.width = width
+//     this.height = height
+// }
+
+// Rectangle.prototype.draw = function () {
+//     console.log(this)
+//     console.log('Drawing...')
+// }
+
+// let rect1 = new Rectangle(12, 15)
+// console.log(rect1);
+
+
+
+// class Rectangle {
+//     constructor(width, height) {
+//         this.width = width
+//         this.height = height
+//         this.another = function () {
+//         }
+//     }
+
+//     name = 'Monirul Islam'
+
+//     draw() {
+//         console.log('Drawing...')
+//     }
+// }
+
+// let rect2 = new Rectangle(45, 23)
+// console.log(rect2)
+
+
+// INHARITANCE
+
+
+// class Shape {
+//     constructor(color) {
+//         this.color = color
+//     }
+//     draw() {
+//         console.log('Drawing...')
+//     }
+// }
+
+// class Rectangle extends Shape {
+//     constructor(color, width, height) {
+//         super(color)
+//         this.width = width
+//         this.height = height
+//     }
+
+//     draw() {
+//         console.log('Drawing a Rectangle....')
+//     }
+
+//     calculate() {
+//         return this.width * this.height
+//     }
+// }
+
+
+
+import Rectangle from "./Rectangle.js"
+
+
+let r = new Rectangle('Green', 4, 5)
+console.log(r)
+r.draw()
